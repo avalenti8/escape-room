@@ -1,58 +1,52 @@
 {
-    "O": {
-        "name": "coccinella",
+    "S": {
+        "name": "serratura",
         "color": "red",
-        "description": "che bella!",
+        "description": "devi aprirla per liberare yoshi",
         "interactions":  {
             "no-item": {
-                "message": "la schiacci",
-                "transform": " "
-            }
-        }
-    },
-    "H": {
-        "name": "idrogeno",
-        "description": "e' dell'idrogeno, non chiedermi come fai a percepirlo...",
-        "color": "magenta",
-        "interactions": {
-            "no-item": {
-                "message": "ma scusa... cosa ti aspetti di fare esattamente con l'idrogeno..."
+                "message": "non si apre"
             },
-            "L": {
-                "message": "opppero'! hai condito le lasagne con l'idrogeno sprigionando una reazione unicornosa",
-                "transform": "U"
+            "C": {
+                "message": "l'hai aperta!",
+                "transform": " "
+            },
+            "G": {
+                "message": "serve una chave",
             }
         }
     },
-    "L": {
-        "name": "lasagne",
-        "description": "sembrano appetitose",
+    "Y": {
+        "name": "yoshi",
+        "description": "e' yoshi, il tuo amico, lo hai salvato",
         "color": "green",
         "interactions": {
             "no-item": {
-                "message": "fa sempre comodo avere delle lasagne in tasca",
+                "message": "yoshi da ora in poi ti seguirà",
                 "transform": " ",
                 "pickup": true
             }
         }
     },
-    "B": {
-        "name": "bomba",
-        "description": "e' una bomba pronta a detonare, devo sbrigarmi a disinnescarla!",
-        "color": "red",
+    "V": {
+        "name": "vaso",
+        "description": "è un vaso",
+        "color": "orange",
         "interactions": {
             "no-item": {
-                "message": "biiiip biiiiiiip biiiiiiiiiiiip",
+                "message": "Hai trovato una combinazione",
+                "transform": "G",
+            }
+        }
+    },
+    "G": {
+        "name": "combinazione",
+        "description": "chissà per cosa bisogna usarla...",
+        "color": "pink",
+        "interactions": {
+            "no-item": {
+                "message": "ora conosci una combinazione",
                 "game_over": "la bomba esplode demolendo l'intera stanza"
-            },
-
-            "V": {
-                "message": "tagli con attenzione un filo che penzola da un lato dell'ordigno...",
-                "win": "hai disinnescato la bomba con successo, sei sano e salvo!"
-            },
-
-            "L": {
-                "message": "sei un pervertito"
             }
         }
     },
@@ -92,121 +86,51 @@
     "Q": {
         "name": "quadro",
         "description": "e' proprio un bel quadro",
-        "color": "blue",
+        "color": "cyan",
         "interactions": {
             "no-item": {
-                "message": "spostando il quadro ti accorgi che dietro nasconte una cassaforte",
-                "transform": "F"
-            }
-        }
-    },
-
-    "F": {
-        "name": "cassaforte",
-        "description": "e' una cassaforte chiusa",
-        "color": "yellow",
-        "interactions": {
-            "K": {
-                "message": "la chiave entra perfettamente nella serratura; la giri",
-                "transform": "V",
-                "remove_from_inventory": true
-            }
-        }
-    },
-
-    "V": {
-        "name": "Tenaglie",
-        "description": "sono delle tenaglie piuttosto affilate",
-        "color": "green",
-        "interactions": {
-            "no-item": {
-                "message": "le raccogli",
+                "message": "non c'è niente, teniamolo per sicurezza",
                 "transform": " ",
                 "pickup": true
             }
         }
     },
 
-    "P": {
-        "name": "pianta",
-        "description": "questa pianta non viene annaffiata da molto tempo",
-        "color": "green",
+    "B": {
+        "name": "botola",
+        "description": "e' una botola",
+        "color": "yellow",
         "interactions": {
             "no-item": {
-                "message": "spostando il vaso noti qualcosa di interessante",
-                "transform": "K"
+                "message": "porta in un'altra stanza",
+                "trsform": 2
+            }
+        }
+    },
+
+    "M": {
+        "name": "monitor",
+        "description": "bisogna digitare una combinazione",
+        "color": "lightblue",
+        "interactions": {
+            "no-item": {
+                "message": "non funziona"
+            },
+            "G": {
+                "message": "il monitor si sposta e trovi una chiave",
+                "transform": "C",
             }
         }
     },
 
     "C": {
-        "name": "candelabro",
-        "description": "un vecchio candelabro arrugginito",
-        "color": "yellow",
-        "interactions": {
-            "V": {
-                "message": "mmm, ha proprio senso... abra cadabra!",
-                "transform": " ",
-                "pickup": true
-            },
-            "C": {
-                "message": "mindfuckkkkk!!!!",
-                "transform": "U"
-            }
-        }
-    },
-
-    "U": {
-        "name": "unicorno",
-        "description": "che splendido esemplare fatato!",
-        "color": "blue",
-        "interactions": {
-            "no-item": {
-                "message": "che splendida sensazione",
-                "win": "voli via contento e vivrai una vita fatta di soddisfazioni cucciolose"
-            },
-
-            "L": {
-                "message": "quello che una volta  era un leggiadro  unicorno ora e' un unicorno obeso! non volera' mai piu'",
-                "game_over": "peccato!"
-            }
-        }
-    },
-
-    "K": {
         "name": "chiave",
-        "description": "e' una piccola chiave",
-        "color": "yellow",
+        "description": "bisogna digitare una combinazione",
+        "color": "lightgreen",
         "interactions": {
             "no-item": {
-                "message": "la raccogli",
+                "message": "prendi la chiave",
                 "transform": " ",
-                "pickup": true
             }
         }
     },
-
-    "+": {
-        "name": "interruttore",
-        "description": "e' un interruttore posizionato su ACCESO",
-        "color": "black",
-        "interactions": {
-            "no-item": { 
-                "message": "lo premi",
-                "transform": "-"
-            }
-        }
-    },
-
-    "-": {
-        "name": "interruttore",
-        "description": "e' un interruttore posizionato su SPENTO",
-        "color": "black",
-        "interactions": {
-            "no-item": { 
-                "message": "lo premi",
-                "transform": "+"
-            }
-        }  
-    }
-}
