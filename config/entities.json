@@ -12,7 +12,7 @@
                 "transform": " "
             },
             "G": {
-                "message": "serve una chave",
+                "message": "serve una chiave"
             }
         }
     },
@@ -24,7 +24,7 @@
             "no-item": {
                 "message": "yoshi da ora in poi ti seguirà",
                 "transform": " ",
-                "pickup": true
+                "win": "HAI SALVATO YOSHI!"
             }
         }
     },
@@ -35,7 +35,7 @@
         "interactions": {
             "no-item": {
                 "message": "Hai trovato una combinazione",
-                "transform": "G",
+                "transform": "G"
             }
         }
     },
@@ -46,7 +46,6 @@
         "interactions": {
             "no-item": {
                 "message": "ora conosci una combinazione",
-                "game_over": "la bomba esplode demolendo l'intera stanza"
             }
         }
     },
@@ -67,8 +66,8 @@
         "color": "blue",
         "interactions": {
             "no-item": {
-                "message": "quale porta scusa???",
-                "transform": "L"
+                "message": "si apre",
+                "move_to_room": 2
             }
         }
     },
@@ -103,7 +102,7 @@
         "interactions": {
             "no-item": {
                 "message": "porta in un'altra stanza",
-                "trsform": 2
+                "transform": 2
             }
         }
     },
@@ -133,4 +132,5 @@
                 "transform": " ",
             }
         }
-    },
+    }
+}
