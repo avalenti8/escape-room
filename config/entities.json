@@ -7,11 +7,11 @@
             "no-item": {
                 "message": "non si apre"
             },
-            "C": {
+            "K": {
                 "message": "l'hai aperta!",
                 "transform": " "
             },
-            "G": {
+            "C": {
                 "message": "serve una chiave"
             }
         }
@@ -31,7 +31,7 @@
     "V": {
         "name": "vaso",
         "description": "è un vaso",
-        "color": "orange",
+        "color": "green",
         "interactions": {
             "no-item": {
                 "message": "Hai trovato una combinazione",
@@ -39,13 +39,15 @@
             }
         }
     },
-    "G": {
+    "C": {
         "name": "combinazione",
         "description": "chissà per cosa bisogna usarla...",
-        "color": "pink",
+        "color": "yellow",
         "interactions": {
             "no-item": {
                 "message": "ora conosci una combinazione",
+                "pickup": true,
+                "transform": " "
             }
         }
     },
@@ -102,7 +104,7 @@
         "interactions": {
             "no-item": {
                 "message": "porta in un'altra stanza",
-                "transform": 2
+                "transform": "2"
             }
         }
     },
@@ -110,26 +112,27 @@
     "M": {
         "name": "monitor",
         "description": "bisogna digitare una combinazione",
-        "color": "lightblue",
+        "color": "magenta",
         "interactions": {
             "no-item": {
                 "message": "non funziona"
             },
-            "G": {
+            "C": {
                 "message": "il monitor si sposta e trovi una chiave",
-                "transform": "C",
+                "transform": "C"
             }
         }
     },
 
-    "C": {
+    "K": {
         "name": "chiave",
         "description": "bisogna digitare una combinazione",
-        "color": "lightgreen",
+        "color": "red",
         "interactions": {
             "no-item": {
                 "message": "prendi la chiave",
                 "transform": " ",
+                "pickup": true
             }
         }
     }
