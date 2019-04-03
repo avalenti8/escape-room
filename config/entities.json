@@ -35,7 +35,7 @@
         "interactions": {
             "no-item": {
                 "message": "Hai trovato una combinazione",
-                "transform": "G"
+                "transform": "C"
             }
         }
     },
@@ -119,7 +119,7 @@
             },
             "C": {
                 "message": "il monitor si sposta e trovi una chiave",
-                "transform": "C"
+                "transform": "K"
             }
         }
     },
