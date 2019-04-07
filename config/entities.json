@@ -9,7 +9,8 @@
             },
             "K": {
                 "message": "l'hai aperta!",
-                "transform": " "
+                "transform": " ",
+                "remove_from_inventory": true
             },
             "C": {
                 "message": "serve una chiave"
@@ -119,7 +120,8 @@
             },
             "C": {
                 "message": "il monitor si sposta e trovi una chiave",
-                "transform": "K"
+                "transform": "K",
+                "remove_from_inventory": true
             }
         }
     },
@@ -133,6 +135,79 @@
                 "message": "prendi la chiave",
                 "transform": " ",
                 "pickup": true
+            }
+        }
+    },
+
+    "O": {
+        "name": "buco nel muro",
+        "description": "è un buco nel muro fatto da yoshi. dietro c'e' la cella di yoshi",
+        "color": "cyan",
+        "interactions": {
+            "no-item": {
+                "message": "parli con Yoshi: vuole darti una cosa...",
+                "transform": "J"
+            }
+        }
+    },
+
+    "J": {
+        "name": "coltellino",
+        "description": "Yoshi ti ha passato un coltellino dal buco",
+        "color": "red",
+        "interactions": {
+            "no-item": {
+                "message": "hai preso il coltellino... sembra molto tagliente",
+                "transform": " ",
+                "pickup": true
+            }
+        }
+    },
+
+    "G": {
+        "name": "guardia",
+        "description": "E' una guardia e inquiete paura",
+        "color": "red",
+        "interactions": {
+            "no-item": {
+                "message": "Ormai e' troppo tardi....",
+                "game_over": "HAI PERSO"
+            },
+            "J": {
+                "message": "Hai ucciso la guardia",
+                "transform": "T",
+                "remove_from_inventory": true
+            },
+            "T": {
+                "message": "la guardia ti lascia passare",
+                "transform": " "
+            }
+        }
+    },
+    "T": {
+        "name": "completo poliziotto",
+        "description": "E' la divisa del poliziotto, usala per salvare yoshi",
+        "color": "blue",
+        "interactions": {
+            "no-item": {
+                "message": "la hai indossata",
+                "transform": " ",
+                "pickup": true
+            }
+        }
+    },
+    "L": {
+        "name": "libreria",
+        "description": "E' una libreria",
+        "color": "yellow",
+        "interactions": {
+            "no-item": {
+                "message": "non succede niente"
+            },
+            "Q": {
+                "message": "appoggi il quadro contro la libreria perchè pesa, la libreria si ruota e si apre un passaggio",
+                "transform": " ",
+                "remove_from_inventory": true
             }
         }
     }

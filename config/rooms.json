@@ -1,19 +1,19 @@
 {
     "0": {
-        "name": "prigione",
-        "description": "Questo luogo è abbastanza cupo e anche freddo... brrrr",
+        "name": "Prigione",
+        "description": "è una prigione fredda",
         "color": "white"
     },
 
     "1": {
-        "name": "Cucina",
-        "description": "E' tutto molto disordinato. Sembra che nessuno abbia riordinato da molto tempo",
-        "color": "red"
+        "name": "Giardino",
+        "description": "si sta bene in questo giardino",
+        "color": "green"
     },
     
     "2": {
-        "name": "Sogno",
-        "description": "sei evidentemente in un sogno",
+        "name": "Sotteraneo",
+        "description": "è molto umido",
         "color": "black"
     }
 }
