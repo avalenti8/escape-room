@@ -101,7 +101,7 @@
     "B": {
         "name": "botola",
         "description": "e' una botola",
-        "color": "yellow",
+        "color": "green",
         "interactions": {
             "no-item": {
                 "message": "porta in un'altra stanza",

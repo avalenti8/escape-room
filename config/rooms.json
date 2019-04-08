@@ -1,19 +1,19 @@
 {
     "0": {
         "name": "Prigione",
-        "description": "è una prigione fredda",
+        "description": "e' una prigione fredda",
         "color": "white"
     },
 
     "1": {
         "name": "Giardino",
-        "description": "si sta bene in questo giardino",
-        "color": "green"
+        "description": "che brutto posto, l'erba e' tutta gialla",
+        "color": "yellow"
     },
     
     "2": {
         "name": "Sotteraneo",
-        "description": "è molto umido",
+        "description": "e' molto umido",
         "color": "black"
     }
 }
